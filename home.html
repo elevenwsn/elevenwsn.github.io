@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#part1">简介</a></li>
+            <li><a href="#part2">极阳之体</a></li>
+            <li><a href="#part3">广告</a></li>
+            <li><a href="#part4">前后对比</a></li>
+        </ul>
+    </nav>
+    <h1>千度百科 | 石一</h1>
+</header>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>千度百科 | 石一</title>
@@ -67,6 +80,42 @@
             margin: 20px auto;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
+
+        nav.menu {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav.menu ul li {
+    display: inline;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #8B4513;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav.menu ul li a:hover {
+    color: #CD5C5C;
+    text-shadow: 0 0 5px rgba(205, 92, 92, 0.8);
+}
 
         p {
             font-size: 18px;
