@@ -43,59 +43,75 @@
     
 <body>
 
-
 <style>
 body{
-  background: linear-gradient(180deg, rgba(122,208,237,0.8) 0%, rgba(235,241,255,0.6) 53%); /* 增加透明度 */
-  backdrop-filter: blur(10px); /* 亚克力模糊效果 */
+  background: linear-gradient(45deg, 
+    rgba(255,215,100,0.9) 0%,     /* 浅琥珀色 */
+    rgba(255,180,80,0.7) 50%,     /* 落日橙 */
+    rgba(255,220,180,0.6) 100%    /* 奶油白 */
+  );
+  backdrop-filter: blur(15px);
   min-height: 100vh;
 }
 
 h2{
-  font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; /* 更现代字体 */
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size:50px;
-  color:#DB7093;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* 文字阴影增强立体感 */
+  color: #8B4513;                  /* 深棕色 */
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5), /* 外发光效果 */
+              -1px -1px 2px rgba(0,0,0,0.1);
+  background: linear-gradient(90deg, #8B4513, #CD5C5C); /* 文字渐变 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h1{
-  font-family: 'STHeiti', 'Microsoft YaHei', sans-serif; /* 优化黑体显示 */
+  font-family: 'STHeiti', 'Microsoft YaHei', sans-serif;
   font-size:70px;
-  color:#DB7093;
-  letter-spacing: 2px; /* 增加字间距 */
-  text-shadow: 3px 3px 6px rgba(0,0,0,0.15);
+  color: #CD5C5C;                  /* 珊瑚红 */
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2),
+               0 0 10px rgba(255,255,255,0.3);
 }
 
 p{
-  color:rgba(0,0,0,0.8); /* 半透明文字 */
-  font-family: 'STLiti', 'LiSu', cursive; /* 优化隶书字体 */
+  color: rgba(88,50,20,0.9);       /* 深咖啡色 */
+  font-family: 'STKaiti', 'KaiTi', cursive;
   font-size:24px;
   text-indent:2em;
-  line-height: 1.8; /* 增加行高 */
-  margin: 30px 80px; /* 扩大边距 */
-  padding: 20px;
-  background: rgba(255,255,255,0.3); /* 文字区域亚克力背景 */
-  border-radius: 12px; /* 圆角 */
-  backdrop-filter: blur(5px); /* 局部模糊 */
-  border: 1px solid rgba(255,255,255,0.5); /* 柔光边框 */
+  line-height: 1.8;
+  margin: 30px 100px;
+  padding: 25px;
+  background: rgba(255,240,200,0.4); /* 米黄亚克力 */
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.6);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
 .button {
-  background: rgba(52,152,219,0.85); /* 半透明按钮 */
-  backdrop-filter: blur(5px);
-  border-radius: 28px;
+  background: linear-gradient(135deg, 
+    rgba(255,140,0,0.8) 0%,       /* 橙色渐变 */
+    rgba(255,80,80,0.7) 100%
+  );
+  backdrop-filter: blur(6px);
+  border-radius: 30px;
   font-family: 'PingFang SC';
-  color: white;
-  font-size: 20px;
-  padding: 12px 25px;
-  border: 1px solid rgba(255,255,255,0.3); /* 半透明边框 */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* 立体阴影 */
-  transition: all 0.3s ease; /* 平滑过渡 */
+  color: #FFF8DC;                 /* 蛋壳白 */
+  font-size: 22px;
+  padding: 15px 30px;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 6px 20px rgba(255,140,0,0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .button:hover {
-  background: rgba(158,209,243,0.9);
-  transform: translateY(-2px); /* 悬停微抬效果 */
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, 
+    rgba(255,160,0,0.9) 0%,
+    rgba(255,100,100,0.8) 100%
+  );
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255,140,0,0.3);
+  color: white;
 }
 </style>
