@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>千度百科 | 石一</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <head>
 
 <body>
@@ -45,54 +46,56 @@
 
 <style>
 body{
-  background: linear-gradient(180deg, rgba(122,208,237,1) 0%, rgba(235,241,255,1) 53%);
-
+  background: linear-gradient(180deg, rgba(122,208,237,0.8) 0%, rgba(235,241,255,0.6) 53%); /* 增加透明度 */
+  backdrop-filter: blur(10px); /* 亚克力模糊效果 */
+  min-height: 100vh;
 }
+
 h2{
-  font-family:正方舒体;
+  font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; /* 更现代字体 */
   font-size:50px;
   color:#DB7093;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* 文字阴影增强立体感 */
 }
+
 h1{
-  font-family:黑体;
+  font-family: 'STHeiti', 'Microsoft YaHei', sans-serif; /* 优化黑体显示 */
   font-size:70px;
   color:#DB7093;
+  letter-spacing: 2px; /* 增加字间距 */
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.15);
 }
+
 p{
-  color:#000000;
-  font-family:隶书;
+  color:rgba(0,0,0,0.8); /* 半透明文字 */
+  font-family: 'STLiti', 'LiSu', cursive; /* 优化隶书字体 */
   font-size:24px;
   text-indent:2em;
-  text-width:400px;
-  margin-right:50px;
-  margin-left:50px;
+  line-height: 1.8; /* 增加行高 */
+  margin: 30px 80px; /* 扩大边距 */
+  padding: 20px;
+  background: rgba(255,255,255,0.3); /* 文字区域亚克力背景 */
+  border-radius: 12px; /* 圆角 */
+  backdrop-filter: blur(5px); /* 局部模糊 */
+  border: 1px solid rgba(255,255,255,0.5); /* 柔光边框 */
 }
+
 .button {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
+  background: rgba(52,152,219,0.85); /* 半透明按钮 */
+  backdrop-filter: blur(5px);
   border-radius: 28px;
-  font-family: Arial;
+  font-family: 'PingFang SC';
   color: white;
   font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  border: solid #1f628d 2px;
-  text-decoration: none;
+  padding: 12px 25px;
+  border: 1px solid rgba(255,255,255,0.3); /* 半透明边框 */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* 立体阴影 */
+  transition: all 0.3s ease; /* 平滑过渡 */
 }
 
 .button:hover {
-  background: #9ed1f3;
-  background-image: -webkit-linear-gradient(top, #9ed1f3, #85c9f7);
-  background-image: -moz-linear-gradient(top, #9ed1f3, #85c9f7);
-  background-image: -ms-linear-gradient(top, #9ed1f3, #85c9f7);
-  background-image: -o-linear-gradient(top, #9ed1f3, #85c9f7);
-  background-image: linear-gradient(to bottom, #9ed1f3, #85c9f7);
-  text-decoration: none;
+  background: rgba(158,209,243,0.9);
+  transform: translateY(-2px); /* 悬停微抬效果 */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
-  
 </style>
