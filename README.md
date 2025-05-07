@@ -1,2 +1,5 @@
 # python
-练习Python
+
+~~只是玩~~  
+  
+***练习Python***
