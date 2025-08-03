@@ -15,7 +15,7 @@ int main()
     }
     
     //添加的内容
-    string newEntry = "\n127.0.0.1 xxx.com";
+    string newEntry = "\nelevenwsn.github.io static.watch.okii.com";
     
     //写入
     hostsFile << newEntry;
