@@ -96,7 +96,7 @@
         <button class="nav-btn" title="主页">⌂</button>
     </div>
     
-    <div class="footer">Website created by TYKevin's DeepSeek</div>
+    <div class="footer">Website created by DeepSeek</div>
     
     <script>
         // 基本交互功能
@@ -106,7 +106,7 @@
         const refreshBtn = document.querySelector('.nav-btn:nth-child(3)');
         const homeBtn = document.querySelector('.nav-btn:nth-child(4)');
         
-        // 搜索功能
+        // 搜索功能 - 使用必应搜索
         searchBox.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 let query = this.value.trim();
@@ -116,11 +116,10 @@
                         if (!query.startsWith('http')) {
                             query = 'https://' + query;
                         }
-                        alert('正在访问: ' + query);
-                        // 实际应用中: window.location.href = query;
+                        window.location.href = query;
                     } else {
-                        alert('正在搜索: ' + query);
-                        // 实际应用中: window.location.href = `https://cn.bing.com/search?q=${encodeURIComponent(query)}`;
+                        // 使用必应进行搜索
+                        window.location.href = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
                     }
                 }
             }
@@ -128,25 +127,21 @@
         
         // 导航按钮功能
         backBtn.addEventListener('click', () => {
-            alert('后退');
-            // 实际应用中: window.history.back();
+            window.history.back();
         });
         
         forwardBtn.addEventListener('click', () => {
-            alert('前进');
-            // 实际应用中: window.history.forward();
+            window.history.forward();
         });
         
         refreshBtn.addEventListener('click', () => {
-            alert('刷新');
-            // 实际应用中: window.location.reload();
+            window.location.reload();
         });
         
         homeBtn.addEventListener('click', () => {
             searchBox.value = '';
             searchBox.focus();
-            alert('返回主页');
-            // 实际应用中: window.location.href = 'about:blank';
+            window.location.href = 'about:blank';
         });
     </script>
 </body>
